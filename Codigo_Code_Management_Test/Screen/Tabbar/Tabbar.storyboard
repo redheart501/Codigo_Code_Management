@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="otQ-dB-LYj">
+            <objects>
+                <viewController id="vqH-PI-ofI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s2S-n2-1cg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="DTD-No-wIO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="heart.fill" selectedImage="heart.fill" catalog="system" id="iHI-b5-cRj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EMJ-yz-1re" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-698" y="49"/>
+        </scene>
+        <!--Tabbar View Controller-->
+        <scene sceneID="jOm-sq-NPb">
+            <objects>
+                <tabBarController storyboardIdentifier="TabbarViewController" id="wFl-fx-zUD" customClass="TabbarViewController" customModule="Codigo_Code_Management_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="w4X-Z1-GQL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.83348131179999996" green="0.95253223180000002" blue="0.90209603309999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Fdx-rH-K67" kind="relationship" relationship="viewControllers" id="Ssb-Zg-mPj"/>
+                        <segue destination="vqH-PI-ofI" kind="relationship" relationship="viewControllers" id="X91-Pp-5zv"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Imm-3k-ph5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1604" y="-255"/>
+        </scene>
+        <!--MovieListViewController-->
+        <scene sceneID="76W-PA-ak4">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MovieListViewController" storyboardName="MovieList" referencedIdentifier="MovieListViewController" id="Fdx-rH-K67" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" id="ofi-fB-K04">
+                        <imageReference key="image" image="house" catalog="system" renderingMode="original"/>
+                        <imageReference key="selectedImage" image="house" catalog="system" renderingMode="original"/>
+                    </tabBarItem>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rKa-Fb-giQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-644" y="-564"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart.fill" width="128" height="128"/>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
